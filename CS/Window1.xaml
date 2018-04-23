@@ -1,0 +1,47 @@
+﻿<Window x:Class="CandleStick2DChart.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" Title="Window1" Height="350" Width="620">
+    <Grid>
+        <dxc:ChartControl Name="chartControl1">
+            <dxc:ChartControl.Diagram>
+                <dxc:XYDiagram2D>
+                      <dxc:XYDiagram2D.Series>
+                        <dxc:CandleStickSeries2D ArgumentScaleType="DateTime">
+                            <dxc:CandleStickSeries2D.Points>
+                                <!--region #FinancialSeriesPoint-->
+                                <dxc:SeriesPoint Argument="1/1/2009" dxc:FinancialSeries2D.CloseValue="27" dxc:FinancialSeries2D.HighValue="28" dxc:FinancialSeries2D.LowValue="24" dxc:FinancialSeries2D.OpenValue="25" />
+                                <!--endregion #FinancialSeriesPoint-->
+                                <dxc:SeriesPoint Argument="1/2/2009" dxc:FinancialSeries2D.CloseValue="32" dxc:FinancialSeries2D.HighValue="35" dxc:FinancialSeries2D.LowValue="26" dxc:FinancialSeries2D.OpenValue="27" />
+                                <dxc:SeriesPoint Argument="1/3/2009" dxc:FinancialSeries2D.CloseValue="29" dxc:FinancialSeries2D.HighValue="35" dxc:FinancialSeries2D.LowValue="27" dxc:FinancialSeries2D.OpenValue="32" />
+                                <dxc:SeriesPoint Argument="1/4/2009" dxc:FinancialSeries2D.CloseValue="36" dxc:FinancialSeries2D.HighValue="37" dxc:FinancialSeries2D.LowValue="29" dxc:FinancialSeries2D.OpenValue="29" />
+                                <dxc:SeriesPoint Argument="1/5/2009" dxc:FinancialSeries2D.CloseValue="33" dxc:FinancialSeries2D.HighValue="37" dxc:FinancialSeries2D.LowValue="32" dxc:FinancialSeries2D.OpenValue="36" />
+                            </dxc:CandleStickSeries2D.Points>
+                            <!--region #ValueToDisplay-->
+                            <dxc:CandleStickSeries2D.PointOptions>
+                                <dxc:PointOptions dxc:FinancialSeries2D.ValueToDisplay="HighValue" />
+                            </dxc:CandleStickSeries2D.PointOptions>
+                            <!--endregion #ValueToDisplay-->
+                            <!--region #Model-->
+                            <dxc:CandleStickSeries2D.Model>
+                                <dxc:GlassCandleStick2DModel />
+                            </dxc:CandleStickSeries2D.Model>
+                            <!--endregion #Model-->
+                        </dxc:CandleStickSeries2D>
+                    </dxc:XYDiagram2D.Series>
+                    <!--region #AxisX-->
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D>
+                            <dxc:AxisX2D.DateTimeOptions>
+                                <dxc:DateTimeOptions Format="MonthAndDay" />
+                            </dxc:AxisX2D.DateTimeOptions>
+                        </dxc:AxisX2D>
+                    </dxc:XYDiagram2D.AxisX>
+                    <!--endregion #AxisX-->
+                    <!--region #AxisY-->
+                    <dxc:XYDiagram2D.AxisY>
+                        <dxc:AxisY2D Range="AlwaysShowZeroLevel=False" />
+                    </dxc:XYDiagram2D.AxisY>
+                    <!--endregion #AxisY-->
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl.Diagram>
+        </dxc:ChartControl>
+    </Grid>
+</Window>
