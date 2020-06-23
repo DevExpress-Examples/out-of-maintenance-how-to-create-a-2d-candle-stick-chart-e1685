@@ -154,7 +154,3 @@
   </Target>
   -->
 </Project>
-  <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
-</Project>
