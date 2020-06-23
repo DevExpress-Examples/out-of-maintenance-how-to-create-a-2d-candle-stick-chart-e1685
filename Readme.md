@@ -6,8 +6,4 @@
 # How to create a 2D Candle Stick chart
 
 
-<p>The following example demonstrates how to create a 2D Candle Stick chart.</p>
-
-<br/>
-
-
+The following example demonstrates how to create a [2D Candle Stick](https://docs.devexpress.com/WPF/6850/controls-and-libraries/charts-suite/chart-control/fundamentals/series-fundamentals/2d-series-types/financial-series/candle-stick?p=netframework) chart.
