@@ -40,16 +40,12 @@ Namespace CandleStick2DChart
 		Public Property High() As Double
 		Public Property Low() As Double
 		Public Property Close() As Double
-'INSTANT VB NOTE: The variable open was renamed since Visual Basic does not handle local variables named the same as class members well:
-'INSTANT VB NOTE: The variable high was renamed since Visual Basic does not handle local variables named the same as class members well:
-'INSTANT VB NOTE: The variable low was renamed since Visual Basic does not handle local variables named the same as class members well:
-'INSTANT VB NOTE: The variable close was renamed since Visual Basic does not handle local variables named the same as class members well:
-		Public Sub New(ByVal arg As DateTime, ByVal open_Conflict As Double, ByVal high_Conflict As Double, ByVal low_Conflict As Double, ByVal close_Conflict As Double)
+		Public Sub New(ByVal arg As DateTime, ByVal open As Double, ByVal high As Double, ByVal low As Double, ByVal close As Double)
 			Me.Date = arg
-			Me.Open = open_Conflict
-			Me.High = high_Conflict
-			Me.Low = low_Conflict
-			Me.Close = close_Conflict
+			Me.Open = open
+			Me.High = high
+			Me.Low = low
+			Me.Close = close
 		End Sub
 	End Class
 End Namespace
